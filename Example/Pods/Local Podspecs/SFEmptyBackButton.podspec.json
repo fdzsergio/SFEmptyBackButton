@@ -1,0 +1,31 @@
+{
+  "name": "SFEmptyBackButton",
+  "version": "0.1.0",
+  "summary": "A short description of SFEmptyBackButton.",
+  "description": "",
+  "homepage": "https://github.com/fdzsergio/SFEmptyBackButton",
+  "license": "MIT",
+  "authors": {
+    "Sergio Fernández": "fdz.sergio@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/fdzsergio/SFEmptyBackButton.git",
+    "tag": "0.1.0"
+  },
+  "social_media_url": "https://twitter.com/fdzsergio",
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "SFEmptyBackButton": [
+      "Pod/Assets/*.png"
+    ]
+  },
+  "dependencies": {
+    "Aspects": [
+      "~> 1.4"
+    ]
+  }
+}

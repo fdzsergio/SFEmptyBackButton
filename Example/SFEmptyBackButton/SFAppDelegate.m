@@ -8,11 +8,24 @@
 
 #import "SFAppDelegate.h"
 
+#import "SFViewController.h"
+
+#import "SFEmptyBackButton.h"
+
 @implementation SFAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    // Magic happens here
+    [SFEmptyBackButton removeTitleFromViewControllers:@[SFViewController.class]];
+
+    SFViewController *viewController = [[SFViewController alloc] initWithNibName:NSStringFromClass(SFViewController.class)
+                                                                          bundle:nil];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:viewController];
+
+    [self.window makeKeyAndVisible];
+
     return YES;
 }
 
