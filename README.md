@@ -7,7 +7,54 @@
 
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To remove the title back button is only necessary to invoke:
+```obj-c
+// Magic happens here
+[SFEmptyBackButton removeTitleFromAllViewControllers];
+```
+
+If you only want to delete the title in certain views invokes this:
+```obj-c
+[SFEmptyBackButton removeTitleFromViewControllers:@[YourViewController.class, AnotherViewController.class];
+```
+
+## How It Works
+
+When you have a view with a very long title like this:
+
+<p align="center">  
+	<img src="./Screenshots/1.png" alt="The Problem" title="SFEmptyBackButton">
+</p>
+
+And navigate to another view with a very long title the following occurs:
+
+<p align="center">  
+	<img src="./Screenshots/2.png" alt="The Problem" title="SFEmptyBackButton">
+</p>
+
+If you delete the title back button invoking:
+```obj-c
+[[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(-100, 0) forBarMetrics:UIBarMetricsDefault];
+```
+
+Most likely this will happen:
+<p align="center">  
+	<img src="./Screenshots/3.png" alt="The Problem" title="SFEmptyBackButton">
+</p>
+
+But if you rewrite back button with empty title in all views:
+
+```obj-c
+UIBarButtonItem *backButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+
+[self.navigationItem setBackBarButtonItem:backButtonItem];
+```
+
+You get the desired effect:
+
+<p align="center">  
+	<img src="./Screenshots/4.png" alt="The Problem" title="SFEmptyBackButton">
+</p>
 
 ## Requirements
 
@@ -23,6 +70,10 @@ pod "SFEmptyBackButton"
 ## Author
 
 Sergio Fernández, fdz.sergio@gmail.com
+
+## Acknowledgement
+
+This [CocoaPod](https://cocoapods.org/pods/SFEmptyBackButton) has been made possible thanks to [Aspects](https://github.com/steipete/Aspects) by [@steipete](http://petersteinberger.com) 
 
 ## License
 
