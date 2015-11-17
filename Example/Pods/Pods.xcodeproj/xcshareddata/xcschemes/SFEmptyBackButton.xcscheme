@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '26EAEBA9E34A58B19AEDFF6A'
+               BlueprintIdentifier = '8B94F8A7A27A41AF000AE36D'
                BlueprintName = 'SFEmptyBackButton'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'SFEmptyBackButton.framework'>

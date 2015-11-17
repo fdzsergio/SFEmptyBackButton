@@ -1,6 +1,6 @@
 PODS:
   - Aspects (1.4.1)
-  - SFEmptyBackButton (0.1.0):
+  - SFEmptyBackButton (1.0.0):
     - Aspects (~> 1.4)
 
 DEPENDENCIES:
@@ -12,6 +12,6 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
-  SFEmptyBackButton: 743bc92f1fb70493be6a3c199a4cac54dd7eab97
+  SFEmptyBackButton: 5c944bb5028e68b7cdca3cb70767ee2d6a7a64a4
 
 COCOAPODS: 0.39.0

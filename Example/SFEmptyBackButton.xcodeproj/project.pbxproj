@@ -20,9 +20,9 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		DF5A3F334A710357962FE110 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 450C1EDA3B660629A553C9CC /* Pods.framework */; };
-		E7CC05F71BD2AB290028DACD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7CC05F61BD2AB290028DACD /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
-		E7CC06011BD2B5B40028DACD /* SFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CC05FF1BD2B5B40028DACD /* SFViewController.m */; settings = {ASSET_TAGS = (); }; };
-		E7CC06021BD2B5B40028DACD /* SFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7CC06001BD2B5B40028DACD /* SFViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		E7CC05F71BD2AB290028DACD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7CC05F61BD2AB290028DACD /* LaunchScreen.storyboard */; };
+		E7CC06011BD2B5B40028DACD /* SFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CC05FF1BD2B5B40028DACD /* SFViewController.m */; };
+		E7CC06021BD2B5B40028DACD /* SFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7CC06001BD2B5B40028DACD /* SFViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -446,9 +446,9 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(SDKROOT)/Developer/Library/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
@@ -469,9 +469,9 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(SDKROOT)/Developer/Library/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
