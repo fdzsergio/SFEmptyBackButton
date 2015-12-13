@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "SFEmptyBackButton"
-  s.version          = "1.0.0"
+  s.version          = "2.0.0"
   s.summary          = "Remove back title from UIViewControllers."
 
   s.description      = <<-DESC
@@ -9,16 +9,16 @@ Pod::Spec.new do |s|
                        DESC
 
   s.homepage         = "https://github.com/fdzsergio/SFEmptyBackButton"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.screenshots      = "https://raw.githubusercontent.com/fdzsergio/SFEmptyBackButton/master/Screenshots/1.png", "https://raw.githubusercontent.com/fdzsergio/SFEmptyBackButton/master/Screenshots/2.png", "https://raw.githubusercontent.com/fdzsergio/SFEmptyBackButton/master/Screenshots/3.png", "https://raw.githubusercontent.com/fdzsergio/SFEmptyBackButton/master/Screenshots/4.png"
   s.license          = 'MIT'
   s.author           = { "Sergio Fernández" => "fdz.sergio@gmail.com" }
   s.source           = { :git => "https://github.com/fdzsergio/SFEmptyBackButton.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/fdzsergio'
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
+  s.source_files = 'Classes/*'
 
   s.frameworks = 'UIKit'
   s.dependency 'Aspects', '~> 1.4'

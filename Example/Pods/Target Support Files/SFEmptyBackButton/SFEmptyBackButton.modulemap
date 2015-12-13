@@ -1,6 +1,0 @@
-framework module SFEmptyBackButton {
-  umbrella header "SFEmptyBackButton-umbrella.h"
-
-  export *
-  module * { export * }
-}

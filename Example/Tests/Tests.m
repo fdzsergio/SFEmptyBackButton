@@ -1,35 +1,69 @@
 //
-//  SFEmptyBackButtonTests.m
-//  SFEmptyBackButtonTests
+//  Tests.m
+//  Tests
 //
-//  Created by Sergio Fernández on 10/17/2015.
-//  Copyright (c) 2015 Sergio Fernández. All rights reserved.
+//  Created by Sergio Fernández Durán on 12/13/15.
+//  Copyright © 2015 fdzsergio. All rights reserved.
 //
 
-@import XCTest;
+#import <XCTest/XCTest.h>
+
+#import "SFViewController.h"
+
+@import SFEmptyBackButton;
 
 @interface Tests : XCTestCase
+
+@property (nonatomic, strong) UINavigationController *navigationController;
 
 @end
 
 @implementation Tests
 
-- (void)setUp
-{
+- (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:[SFViewController new]];
 }
 
-- (void)tearDown
-{
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+- (void)tearDown {
     [super tearDown];
 }
 
-- (void)testExample
-{
-    XCTAssertTrue(YES, @"TODO TEST.");
+- (void)testViewControllerHasTitle {
+
+    BOOL equalTitles = [self.navigationController.title isEqualToString:NSStringFromClass([SFViewController class])];
+
+    XCTAssertTrue(equalTitles);
+}
+
+- (void)testViewControllerHasRemovedTitle {
+    [SFEmptyBackButton removeTitleFromAllViewControllers];
+
+    [self.navigationController pushViewController:[SFViewController new] animated:NO];
+
+    XCTAssertEqual(self.navigationController.presentedViewController.navigationItem.backBarButtonItem.title, nil);
+}
+
+- (void)testViewControllerHasRemovedAllTitles {
+    [SFEmptyBackButton removeTitleFromViewControllers:@[SFViewController.class]];
+
+    [self.navigationController pushViewController:[SFViewController new] animated:NO];
+    [self.navigationController pushViewController:[SFViewController new] animated:NO];
+    [self.navigationController pushViewController:[SFViewController new] animated:NO];
+    [self.navigationController pushViewController:[SFViewController new] animated:NO];
+
+    XCTAssertEqual(self.navigationController.presentedViewController.navigationItem.backBarButtonItem.title, nil);
+}
+
+- (void)testViewControllerChangesNothingIfRemoveFromBarButtom {
+    [SFEmptyBackButton removeTitleFromViewControllers:@[UIButton.class]];
+
+    [self.navigationController pushViewController:[SFViewController new] animated:NO];
+
+    BOOL equalTitles = [self.navigationController.title isEqualToString:NSStringFromClass([SFViewController class])];
+
+    XCTAssertTrue(equalTitles);
 }
 
 @end
-

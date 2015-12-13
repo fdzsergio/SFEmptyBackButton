@@ -1,6 +1,6 @@
 # SFEmptyBackButton
 
-[![CI Status](http://img.shields.io/travis/fdzsergio/SFEmptyBackButton.svg?style=flat)](https://travis-ci.org/fdzsergio/SFEmptyBackButton)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Version](https://img.shields.io/cocoapods/v/SFEmptyBackButton.svg?style=flat)](http://cocoapods.org/pods/SFEmptyBackButton)
 [![License](https://img.shields.io/cocoapods/l/SFEmptyBackButton.svg?style=flat)](http://cocoapods.org/pods/SFEmptyBackButton)
 [![Platform](https://img.shields.io/cocoapods/p/SFEmptyBackButton.svg?style=flat)](http://cocoapods.org/pods/SFEmptyBackButton)
@@ -60,11 +60,21 @@ You get the desired effect:
 
 ## Installation
 
+### CocoaPods
+
 SFEmptyBackButton is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
 pod "SFEmptyBackButton"
+```
+
+### Carthage
+
+You can also install it via [Carthage](https://github.com/Carthage/Carthage). To do so, add the following to your Cartfile:
+
+```ruby
+github "fdzsergio/SFEmptyBackButton"
 ```
 
 ## Author
