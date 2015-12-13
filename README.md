@@ -56,8 +56,6 @@ You get the desired effect:
 	<img src="./Screenshots/4.png" alt="The Problem" title="SFEmptyBackButton">
 </p>
 
-## Requirements
-
 ## Installation
 
 ### CocoaPods
