@@ -1,5 +1,5 @@
 # SFEmptyBackButton
-
+[![Build Status](https://travis-ci.org/fdzsergio/SFEmptyBackButton.svg?branch=master)](https://travis-ci.org/fdzsergio/SFEmptyBackButton)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Version](https://img.shields.io/cocoapods/v/SFEmptyBackButton.svg?style=flat)](http://cocoapods.org/pods/SFEmptyBackButton)
 [![License](https://img.shields.io/cocoapods/l/SFEmptyBackButton.svg?style=flat)](http://cocoapods.org/pods/SFEmptyBackButton)
