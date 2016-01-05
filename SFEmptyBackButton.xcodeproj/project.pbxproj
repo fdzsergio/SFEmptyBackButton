@@ -9,13 +9,47 @@
 /* Begin PBXBuildFile section */
 		E78776461C1DC6FF0035201D /* SFEmptyBackButton.h in Headers */ = {isa = PBXBuildFile; fileRef = E78776451C1DC6FF0035201D /* SFEmptyBackButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E787765D1C1DD2670035201D /* SFEmptyBackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E787765C1C1DD2670035201D /* SFEmptyBackButton.m */; };
+		E7E5C1381C3C214500FE2623 /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E5C1371C3C214500FE2623 /* Tests.m */; };
+		E7E5C13A1C3C214500FE2623 /* SFEmptyBackButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E78776421C1DC6FF0035201D /* SFEmptyBackButton.framework */; };
+		E7E5C1421C3C216000FE2623 /* SFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E5C1411C3C216000FE2623 /* SFViewController.m */; };
+		E7E5C1441C3C225500FE2623 /* Aspects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E5C1431C3C225500FE2623 /* Aspects.framework */; };
+		E7E5C1481C3C22A000FE2623 /* Aspects.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E7E5C1431C3C225500FE2623 /* Aspects.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E7E5C13B1C3C214500FE2623 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E78776391C1DC6FF0035201D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E78776411C1DC6FF0035201D;
+			remoteInfo = SFEmptyBackButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E7E5C1471C3C229700FE2623 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E7E5C1481C3C22A000FE2623 /* Aspects.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E78776421C1DC6FF0035201D /* SFEmptyBackButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SFEmptyBackButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E78776451C1DC6FF0035201D /* SFEmptyBackButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFEmptyBackButton.h; sourceTree = "<group>"; };
 		E78776471C1DC6FF0035201D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E787765C1C1DD2670035201D /* SFEmptyBackButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFEmptyBackButton.m; sourceTree = "<group>"; };
+		E7E5C1351C3C214500FE2623 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7E5C1371C3C214500FE2623 /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
+		E7E5C1391C3C214500FE2623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7E5C1401C3C216000FE2623 /* SFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFViewController.h; sourceTree = "<group>"; };
+		E7E5C1411C3C216000FE2623 /* SFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFViewController.m; sourceTree = "<group>"; };
+		E7E5C1431C3C225500FE2623 /* Aspects.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Aspects.framework; path = Carthage/Build/iOS/Aspects.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -23,6 +57,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7E5C1441C3C225500FE2623 /* Aspects.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7E5C1321C3C214500FE2623 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7E5C13A1C3C214500FE2623 /* SFEmptyBackButton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				E78776441C1DC6FF0035201D /* Source */,
+				E7E5C1451C3C225B00FE2623 /* Frameworks */,
+				E7E5C1361C3C214500FE2623 /* Tests */,
 				E78776431C1DC6FF0035201D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				E78776421C1DC6FF0035201D /* SFEmptyBackButton.framework */,
+				E7E5C1351C3C214500FE2623 /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +100,25 @@
 			);
 			name = Source;
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		E7E5C1361C3C214500FE2623 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E7E5C1371C3C214500FE2623 /* Tests.m */,
+				E7E5C1391C3C214500FE2623 /* Info.plist */,
+				E7E5C1401C3C216000FE2623 /* SFViewController.h */,
+				E7E5C1411C3C216000FE2623 /* SFViewController.m */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		E7E5C1451C3C225B00FE2623 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7E5C1431C3C225500FE2623 /* Aspects.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -88,6 +153,25 @@
 			productReference = E78776421C1DC6FF0035201D /* SFEmptyBackButton.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		E7E5C1341C3C214500FE2623 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7E5C13F1C3C214500FE2623 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				E7E5C1311C3C214500FE2623 /* Sources */,
+				E7E5C1321C3C214500FE2623 /* Frameworks */,
+				E7E5C1331C3C214500FE2623 /* Resources */,
+				E7E5C1471C3C229700FE2623 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7E5C13C1C3C214500FE2623 /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = E7E5C1351C3C214500FE2623 /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +183,10 @@
 				TargetAttributes = {
 					E78776411C1DC6FF0035201D = {
 						CreatedOnToolsVersion = 7.2;
+					};
+					E7E5C1341C3C214500FE2623 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = V7M9A44686;
 					};
 				};
 			};
@@ -115,12 +203,20 @@
 			projectRoot = "";
 			targets = (
 				E78776411C1DC6FF0035201D /* SFEmptyBackButton */,
+				E7E5C1341C3C214500FE2623 /* Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E78776401C1DC6FF0035201D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7E5C1331C3C214500FE2623 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -138,7 +234,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E7E5C1311C3C214500FE2623 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7E5C1381C3C214500FE2623 /* Tests.m in Sources */,
+				E7E5C1421C3C216000FE2623 /* SFViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E7E5C13C1C3C214500FE2623 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E78776411C1DC6FF0035201D /* SFEmptyBackButton */;
+			targetProxy = E7E5C13B1C3C214500FE2623 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E78776541C1DC6FF0035201D /* Debug */ = {
@@ -269,6 +382,28 @@
 			};
 			name = Release;
 		};
+		E7E5C13D1C3C214500FE2623 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fdzsergio.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E7E5C13E1C3C214500FE2623 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fdzsergio.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -286,6 +421,15 @@
 			buildConfigurations = (
 				E78776571C1DC6FF0035201D /* Debug */,
 				E78776581C1DC6FF0035201D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7E5C13F1C3C214500FE2623 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7E5C13D1C3C214500FE2623 /* Debug */,
+				E7E5C13E1C3C214500FE2623 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

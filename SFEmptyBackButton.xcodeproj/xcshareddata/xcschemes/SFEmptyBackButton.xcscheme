@@ -33,7 +33,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E72977771C1DDE6B00E83951"
+               BlueprintIdentifier = "E7E5C1341C3C214500FE2623"
                BuildableName = "Tests.xctest"
                BlueprintName = "Tests"
                ReferencedContainer = "container:SFEmptyBackButton.xcodeproj">
