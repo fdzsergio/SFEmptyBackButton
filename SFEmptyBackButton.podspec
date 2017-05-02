@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "SFEmptyBackButton"
-  s.version          = "2.0.0"
+  s.version          = "2.1.0"
   s.summary          = "Remove back title from UIViewControllers."
 
   s.description      = <<-DESC
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-  s.source_files = 'Classes/*'
+  s.source_files = 'Source/*'
 
   s.frameworks = 'UIKit'
   s.dependency 'Aspects', '~> 1.4'
