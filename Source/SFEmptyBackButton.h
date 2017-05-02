@@ -32,8 +32,6 @@ FOUNDATION_EXPORT const unsigned char SFEmptyBackButtonVersionString[];
  If you want remove back title from selected `ViewControllers` invoke this method with ViewController.class array that 
  you want.
 
- @param array with viewControllers to empty back title
-
  @warning set only (NSArray<UIViewController *> *) on parameter
  */
 + (void)removeTitleFromViewControllers:(NSArray *)viewControllers;
