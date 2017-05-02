@@ -1,0 +1,19 @@
+PODS:
+  - Aspects (1.4.1)
+  - SFEmptyBackButton (2.1.0):
+    - Aspects (~> 1.4)
+
+DEPENDENCIES:
+  - SFEmptyBackButton (from `../`)
+
+EXTERNAL SOURCES:
+  SFEmptyBackButton:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
+  SFEmptyBackButton: d63591e862a8bd1263f6729a43c9e593539dd30f
+
+PODFILE CHECKSUM: 0235d97bcfa9af2b1e587f746aca4cb31a6be12f
+
+COCOAPODS: 1.2.1

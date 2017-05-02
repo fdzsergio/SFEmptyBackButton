@@ -8,9 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
-    @IBAction func buttonDidPress(sender: AnyObject) {
+    @IBAction func buttonDidPress(_ sender: AnyObject) {
         self.navigationController?.pushViewController(ViewController(), animated: true)
     }
 

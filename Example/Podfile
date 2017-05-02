@@ -1,4 +1,12 @@
 source 'https://github.com/CocoaPods/Specs.git'
-use_frameworks!
 
-pod "SFEmptyBackButton", :path => '../'
+platform :ios, '8.0'
+
+use_frameworks!
+inhibit_all_warnings!
+
+target 'Example' do
+
+  pod 'SFEmptyBackButton', :path => '../'
+
+end
